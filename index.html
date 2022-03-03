@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/style.css?_v=20220303205907">
    <!-- Заголовок страницы в браузере -->
    <title>Главная</title>
    <!-- Кодировка страницы -->
@@ -53,7 +53,7 @@
 
 <body>
    <div class="wrapper">
-      <header class="header">
+      <header class="header _anim-items _anim-no-hide">
    <div class="header__content _container">
       <nav data-spollers="599,max" data-da=".wrapper,599,1" class="header__menu">
          <ul class="header__list">
@@ -116,10 +116,10 @@
 </header>
       <main class="page">
          <section class="page__first-screen first">
-            <img src="img/main_image.jpg" alt="">
+            <picture><source srcset="img/main_image.webp"type="image/webp"><img src="img/main_image.jpg" alt=""></picture>
             <div data-da=".first,651,last" class="first__content">
                <div class="first__body _container">
-                  <div class="cookie">
+                  <div class="cookie _anim-items _anim-no-hide">
                      <div class="cookie__content _container">
                         <div class="cookie__title">We use cookies to enhance your experience on our website.<span>
                               By using our
@@ -129,7 +129,7 @@
                         <a class="cookie__button _button-white">Got It</a>
                      </div>
                   </div>
-                  <div class="first__text">
+                  <div class="first__text _anim-items _anim-no-hide">
                      <h1 class="first__title">Health in your pocket.</h1>
                      <h3 class="first__sub-title">Functional gum and mints to energize, calm and focus you in the
                         moment.
@@ -141,34 +141,35 @@
             </div>
          </section>
          <section class="page__mental mental _container">
-            <h2 class="mental__title _title">We get the mental game.</h2>
-            <h3 class="mental__text">That’s why we create products to help shift your mindset with ease and flow. Our
+            <h2 class="mental__title _title _anim-items">We get the mental game.</h2>
+            <h3 class="mental__text _anim-items">That’s why we create products to help shift your mindset with ease and
+               flow. Our
                functional gum and mints are shortcuts to the ideal state of mind, delivering just the right amount of
                what you need to energize, calm and focus your mind in the moment.</h3>
             <div class="mental__gif">
-               <img src="img/zone.gif" alt="">
+               <picture><source srcset="img/zone.webp"type="image/webp"><img src="img/zone.gif" alt=""></picture>
             </div>
          </section>
-         <section class="page__shop shop ">
+         <section class="page__shop shop">
             <div class="shop__content _container">
-               <h2 class="shop__title">Shop by function</h2>
-               <h3 class="shop__sub-title">Find the right products for any situation.</h3>
+               <h2 class="shop__title _anim-items">Shop by function</h2>
+               <h3 class="shop__sub-title _anim-items">Find the right products for any situation.</h3>
                <div class="shop__row">
                   <div class="shop__item">
                      <div class="shop__image"><img src="img/shop/energy.svg" alt=""></div>
-                     <h4 class="shop__item-title">Energy & Focus</h4>
+                     <h4 class="shop__item-title _anim-items">Energy & Focus</h4>
                      <a href="" class="shop__item-button">
                         shop now
                      </a>
                   </div>
                   <div class="shop__item">
                      <div class="shop__image"><img src="img/shop/calm.svg" alt=""></div>
-                     <h4 class="shop__item-title">Calm & Clarity</h4>
+                     <h4 class="shop__item-title _anim-items">Calm & Clarity</h4>
                      <a href="" class="shop__item-button">shop now</a>
                   </div>
                   <div class="shop__item">
                      <div class="shop__image"><img src="img/shop/ideal.svg" alt=""></div>
-                     <h4 class="shop__item-title">Ideal State</h4>
+                     <h4 class="shop__item-title _anim-items">Ideal State</h4>
                      <a href="" class="shop__item-button">shop now</a>
                   </div>
                </div>
@@ -176,70 +177,150 @@
          </section>
          <section class="page__energy energy">
             <div class="energy__wave _wave">
-               <canvas id="wave"></canvas>
-               <!--<img src="img/Energy/wave.png" alt="">-->
-               <!--<img src="img/Energy/wave.png" alt="">-->
+               <canvas id="water-wave_1"></canvas>
             </div>
             <div class="energy__content">
-               <div class="neuro-gallery _container">
-                  <div class="neuro-gallery__image">
-                     <div class="neuro-gallery__image-content">
-                        <img src="img/Energy/gum.png" alt="">
-                        <img src="img/Energy/mints.png" alt="">
-                        <img src="img/Energy/shadow.png" alt="">
-                     </div>
-                  </div>
+               <div class="neuro-gallery energy-gallery">
                   <div class="neuro-gallery__body">
-                     <div class="neuro-gallery__title">Energy </br> & Focus</div>
-                     <h3 class="neuro-gallery__sub-title">Specially formulated with natural caffeine, L-theanine and
+                     <div class="neuro-gallery__title _anim-items">Energy & Focus</div>
+                     <h3 class="neuro-gallery__sub-title _anim-items">Specially formulated with natural caffeine,
+                        L-theanine and
                         B-vitamins to sustain the mental endurance necessary to maintain your focus.*</h3>
-                     <div class="neuro-gallery__colors">
+                     <div class="neuro-gallery__colors _anim-items">
                         <div class="neuro-gallery__color"></div>
                         <div class="neuro-gallery__color"></div>
                         <div class="neuro-gallery__colors-name">Peppermint</div>
                      </div>
-                     <a href="#" class="neuro-gallery__button wave-btn">
+                     <a href="#" class="neuro-gallery__button wave-btn _energy _anim-items">
                         <span class="wave-btn__text">Shop</span>
                         <span class="wave-btn__waves"></span>
                      </a>
                   </div>
+                  <div class="neuro-gallery__image">
+                     <div class="neuro-gallery__image-content">
+                        <picture><source srcset="img/Energy/gum.webp"type="image/webp"><img src="img/Energy/gum.png" alt=""></picture>
+                        <picture><source srcset="img/Energy/mints.webp"type="image/webp"><img src="img/Energy/mints.png" alt=""></picture>
+                        <picture><source srcset="img/Energy/shadow.webp"type="image/webp"><img src="img/Energy/shadow.png" alt=""></picture>
+                     </div>
+                  </div>
                </div>
             </div>
          </section>
-         <!--<section class="page__calm calm">
+         <section class="page__calm calm">
             <div class="calm__wave _wave">
-               <canvas id="wave"></canvas>
+               <canvas id="water-wave_2"></canvas>
             </div>
-            <div class="calm__content _container neuro-gallery">
-               <div class="neuro-gallery__image">
-                  <div class="neuro-gallery__image-content">
-                     <img src="img/Energy/gum.png" alt="">
-                     <img src="img/Energy/mints.png" alt="">
-                     <img src="img/Energy/shadow.png" alt="">
+            <div class="calm__content">
+               <div class="neuro-gallery _calm _container">
+                  <div class=" neuro-gallery__body _calm">
+                     <div class="neuro-gallery__title _calm _anim-items">Calm & Clarity</div>
+                     <h3 class="neuro-gallery__sub-title _calm _anim-items">Expertly developed with GABA, vitamin D3,
+                        and L-theanine
+                        to
+                        optimize composure and clarity of mind.*</h3>
+                     <div class="neuro-gallery__colors _anim-items">
+                        <div class="neuro-gallery__color _calm"></div>
+                        <div class="neuro-gallery__color _calm"></div>
+                        <div class="neuro-gallery__colors-name _calm">Ginger Chai</div>
+                     </div>
+                     <a href="#" class="neuro-gallery__button wave-btn _calm _anim-items">
+                        <span class="wave-btn__text">Shop</span>
+                        <span class="wave-btn__waves"></span>
+                     </a>
+                  </div>
+                  <div class="neuro-gallery__image">
+                     <div class="neuro-gallery__image-content">
+                        <picture><source srcset="img/Calm/01.webp"type="image/webp"><img src="img/Calm/01.png" alt=""></picture>
+                        <picture><source srcset="img/Calm/02.webp"type="image/webp"><img src="img/Calm/02.png" alt=""></picture>
+                        <picture><source srcset="img/Calm/03.webp"type="image/webp"><img src="img/Calm/03.png" alt=""></picture>
+                     </div>
                   </div>
                </div>
-               <div class="neuro-gallery__body">
-                  <div class="neuro-gallery__title"></div>
-                  <h3 class="neuro-gallery__sub-title"></h3>
-                  <div class="neuro-gallery__colors">
-                     <div class="neuro-gallery__color"></div>
-                     <div class="neuro-gallery__color"></div>
-                     <div class="neuro-gallery__colors-name"></div>
-                     <a href="#" class="neuro-gallery__button">Shop</a>
+            </div>
+         </section>
+         <section class="page_duo duo _ideal">
+            <div class="duo__content">
+               <div class="duo__image _img">
+                  <picture><source srcset="img/ideal_state.webp"type="image/webp"><img src="img/ideal_state.png" alt=""></picture>
+               </div>
+               <div class="duo__body">
+                  <div class="duo__title _anim-items">The Ideal State</div>
+                  <div class="duo__text _anim-items">Some days, getting in the zone requires a boost – other days, we
+                     need to take
+                     it down a notch. Balance the ups and downs of your ambition with a combo pack of Energy & Focus and
+                     Calm & Clarity.</div>
+                  <a href="#" class="duo__button _anim-items">Shop Now</a>
+               </div>
+            </div>
+         </section>
+         <section class="page_duo duo _zone">
+            <div class="duo__content">
+               <div class="duo__image _img">
+                  <img src="img/duo-two.svg" alt="">
+               </div>
+               <div class="duo__body">
+                  <div class="duo__title _anim-items">In the zone.
+                     Every day.</div>
+                  <div class="duo__text _anim-items">Never run out of Neuro with a monthly subscription. Members get 10%
+                     off and
+                     free shipping straight to your door.</div>
+                  <a href="#" class="duo__button _anim-items">Subscribe</a>
+               </div>
+            </div>
+         </section>
+         <section class="page__mission mission">
+            <div class="mission__content">
+               <div class="mission__container">
+                  <div class="mission__body">
+                     <div class="mission__title _anim-items _anim-no-hide">Our Mission</div>
+                     <div class="mission__text _anim-items _anim-no-hide">We started Neuro out of a desire to do more
+                        and become the
+                        best versions
+                        of
+                        ourselves.</div>
+                     <a href="#" class="mission__link _anim-items">Our Story</a>
                   </div>
                </div>
             </div>
-         </section>-->
+            <div class="mission__image _img _anim-items _anim-no-hide">
+               <picture><source srcset="img/mission.webp"type="image/webp"><img src="img/mission.png" alt=""></picture>
+            </div>
+         </section>
+         <section class="page__science science">
+            <div class="science__content">
+               <div class="science__wave _wave">
+                  <canvas id="water-wave_3"></canvas>
+               </div>
+               <div class="science__entrails">
+                  <div class="science__container _container">
+                     <div class="science__body">
+                        <div class="science__title _anim-items">There’s a science to the science.</div>
+                        <div class="science__text _anim-items">We have gone through dozens of formulations, processes
+                           and tests to
+                           ensure
+                           each gum and mint we make delivers on our promise of getting you in the right state at the
+                           right
+                           time.</div>
+                        <a href="" class="science__link">How we do it</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="science__image _img _anim-items">
+                  <picture><source srcset="img/scines.webp"type="image/webp"><img src="img/scines.png" alt=""></picture>
+               </div>
+            </div>
+         </section>
          <section class="page__more more _container">
-            <h2 class="more__title">Doing more with Neuro?
+            <h2 class="more__title _anim-items">Doing more with Neuro?
             </h2>
-            <h3 class="more__text">Share what you’ve accomplished with Neuro in your pocket and in your corner.
+            <h3 class="more__text _anim-items">Share what you’ve accomplished with Neuro in your pocket and in your
+               corner.
                <a href="">Tag @neurogum</a>
             </h3>
          </section>
       </main>
       <footer class="footer _img">
-   <img src="img/footer-bg.png" alt="">
+   <picture><source srcset="img/footer-bg.webp"type="image/webp"><img src="img/footer-bg.png" alt=""></picture>
 
    <div class="footer__content _container">
       <div class="footer__body">
@@ -251,7 +332,7 @@
    </div>
 </footer>
    </div>
-   <script src="js/app.min.js"></script>
+   <script src="js/app.min.js?_v=20220303205907"></script>
 </body>
 
 </html>
